@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Nandana Atha Balangga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Nandana Atha Balangga</h1>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#hobi">Hobi</a>
+      <a href="#jadwal">Jadwal</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <main>
+      <section id="tentang" class="profile-grid">
+        <!-- Menggunakan URL foto profil dari GitHub -->
+        <img
+          class="profile-photo"
+          src="https://github.com/NathaLangga.png"
+          alt="Foto profil Nandana Atha Balangga"
+        >
+        <div>
+          <h2>Tentang Saya</h2>
+          <p>
+            Saya adalah mahasiswa di Telkom University yang memiliki minat kuat di bidang kreatif dan teknologi. 
+            Saya terbiasa menggabungkan aspek visual dan teknis dalam berbagai proyek yang saya kerjakan.
+          </p>
+        </div>
+      </section>
+
+      <section id="hobi">
+        <h2>Hobi Saya</h2>
+        <p>Di waktu luang, saya suka melakukan beberapa kegiatan berikut:</p>
+        <ul>
+          <li>Fotografi</li>
+          <li>Editing</li>
+          <li>Videography</li>
+        </ul>
+      </section>
+
+      <section id="jadwal">
+        <h2>Jadwal Kuliah</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Hari</th>
+              <th scope="col">Mata Kuliah</th>
+              <th scope="col">Jam</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Senin</td>
+              <td>Penjaminan Mutu Perangkat Lunak</td>
+              <td>07:30:00</td>
+            </tr>
+            <tr>
+              <td>Senin</td>
+              <td>Manajemen Proyek</td>
+              <td>10:30:00</td>
+            </tr>
+            <tr>
+              <td>Senin</td>
+              <td>Perancangan dan Pemrograman Web</td>
+              <td>15:30:00</td>
+            </tr>
+            <tr>
+              <td>Selasa</td>
+              <td>Pemrograman Perangkat Bergerak</td>
+              <td>10:30:00</td>
+            </tr>
+            <tr>
+              <td>Selasa</td>
+              <td>Perancangan dan Pemrograman Web</td>
+              <td>14:30:00</td>
+            </tr>
+            <tr>
+              <td>Rabu</td>
+              <td>Wawasan Global TIK</td>
+              <td>08:30:00</td>
+            </tr>
+            <tr>
+              <td>Rabu</td>
+              <td>Kewirausahaan</td>
+              <td>15:30:00</td>
+            </tr>
+            <tr>
+              <td>Kamis</td>
+              <td>Pengalaman Pengguna (UX)</td>
+              <td>07:30:00</td>
+            </tr>
+            <tr>
+              <td>Kamis</td>
+              <td>Pemrograman Perangkat Bergerak</td>
+              <td>13:30:00</td>
+            </tr>
+            <tr>
+              <td>Jumat</td>
+              <td>Kewarganegaraan</td>
+              <td>09:30:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="tautan">
+        <h2>Tautan Profil</h2>
+        <p>Kunjungi tautan berikut untuk melihat profil profesional dan repositori proyek saya.</p>
+        <div class="links">
+          <a class="button-link" href="https://www.linkedin.com/in/nandana-atha-balangga-a5456b399/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="button-link" href="https://github.com/NathaLangga" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </section>
+
+      <section id="kontak">
+        <h2>Kontak Saya</h2>
+        <p>Hubungi saya melalui form di bawah ini atau kirim email langsung ke <strong>balaatha05@gmail.com</strong>.</p>
+        <!-- Form action diubah untuk membuka email klien menuju alamat yang diminta -->
+        <form action="mailto:balaatha05@gmail.com" method="post" enctype="text/plain" novalidate>
+          <label for="nama">
+            Nama
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required>
+          </label>
+
+          <label for="email">
+            Email
+            <input type="email" id="email" name="email" placeholder="nama@email.com" required aria-describedby="email-error">
+            <span class="error-message" id="email-error" role="alert"></span>
+          </label>
+
+          <label for="pesan">
+            Pesan
+            <textarea id="pesan" name="pesan" placeholder="Tulis pesanmu di sini" required></textarea>
+          </label>
+
+          <button type="submit">Kirim via Email</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>(c) 2026 Nandana Atha Balangga. Semua hak dilindungi.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
